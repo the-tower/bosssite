@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /files/
+
+User-agent: *
+Allow: /
+
+Sitemap: http://theexecutiveos.xyz/sitemap.xml

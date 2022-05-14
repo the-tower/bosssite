@@ -1,0 +1,153 @@
+GNU/Linux (Arch Based) cheat sheet
+
+
+Key Terms
+
+-Directory           Linux equivalent on a folder
+-$USER               Current user's name
+-distro              Stands for "distribution", a specific version of linux, like BossOS, Raspbian, Arch, Manjaro, Debian, or Gentoo
+-package manager     Software that is used to download and update software on your system. Distro specific. Pacman for Arch/Manjaro/BossOS
+-root                Linux equivalent of windows administrator. sudo command allows superusers to act as root. Also refers to base directory "/"
+-superuser           User allowed to use sudo command
+-package             Any software on the system. Can be depenencies or programs, like Firefox, or programming languages like Python
+-dotfiles            Hidden files in Linux. Starts with a period, like .hidden.txt
+-FOSS                Free Open Source Software. Linux is FOSS
+-Linus Torvalds      A man with overflowing courage, programming talent, and spite toward Nvidia
+
+
+Commands
+
+$ ls [ "" or -a ]
+        lists all directories and files inside current directory, excluding hidden files
+        to show all files, including dotfiles files, run ls -a
+
+$ pwd
+        print path to current directory
+        stands for "print working directory"
+        useful if you need to change directory, and will need to change back
+
+$ cd DIRECTORY
+        changes current directory to DIRECTORY
+        "~" acts as /home/$USER/ (the Windows equivalent is C:\Users\{your_username})
+        "/" is base, equal to "C:"
+                cd /etc/ssh says that, from the root directory, go to the etc folder, then inside that directory, go to the ssh folder
+        No specified path changes directory to one inside current directory
+
+$ mkdir DIRECTORY
+        creates an new directory with name DIRECTORY inside current directory
+        can give specified path, like mkdir /home/$USER/git would create git directory in home directory from anywhere
+                mkdir ~/git does the same
+
+$ touch FILENAME
+        creates file with name FILENAME inside current directory
+        can give specified path, similar to cd
+
+$ cat FILENAME
+        Lists all text inside file FILENAME
+        can give specified path
+        no specified path lists only in current directory
+
+$ echo "CONTENTS" [ "" or > or >> ] [FILENAME]
+        echo "CONTENTS" just prints CONTENTS. Don't use FILENAME at end
+        echo "CONTENTS" > FILENAME replaces all contents of file FILENAME with CONTENTS
+        echo "CONTENTS" >> FILENAME adds CONTENTS on now line at end of file FILENAME
+
+$ nano FILENAME
+        edits file FILENAME with nano text editor
+        can give specified path
+
+$ mv [ "" or -r ]SOURCE LOCATION
+        moves SOURCE to location LOCATION
+        SOURCE can be a directory or file
+        to move a directory, mv -r DIRECTORY_1 DIRECTORY_2 must be run
+        LOCATION can be a directory or file name
+        to rename a file, run mv OLD_FILENAME NEW_FILENAME
+
+$ cp [ "" or -r ] FILENAME LOCATION
+        copies file FILENAME to location LOCATION
+        LOCATION can be a directory or file name
+        to duplicate a file, run cp ORIGINAL_FILE DUPLICATE FILE
+
+$ rm [ "" or -r ] SOURCE
+        removes SOURCE, which can be a directory or file
+        to remove a directory, rm -r DIRECTORY must be run
+
+$ git clone REPOSITORY-LINK
+        pulls code from github repository with specified link
+        places in folder with the cloned repository's name inside current directory
+
+$ sudo COMMAND
+        runs COMMAND as root
+        only useable by superusers
+        use with caution, since you can seriously break your system using this command
+        mostly safe
+
+$ pacman -Syy
+        must be run with sudo or as root
+        updates package lists
+        run before pacman -Syu
+
+$ pacman -Syu
+        must be run with sudo or as root
+        upgrades all packages on computer
+
+$ pacman -S PACKAGE
+        must be run with sudo or as root
+        installs the package PACKAGE
+        also installs necessary dependancies
+
+$ pacman -Rs PACKAGE
+        must be run with sudo or as root
+        removes the package PACKAGE
+        doesn't remove any dependancies
+
+$ python FILENAME
+        runs file FILENAME as python file
+        python files typically have .py extension
+
+$ java FILENAME
+        runs file FILENAME as java file
+        java files typically have .java extension
+        file must be compiled first
+
+$ javac FILENAME
+        compiles file FILENAME as java file
+        java files typically have .java extension
+
+$ sh FILENAME
+        runs shell script file FILENAME
+        shell script files typically have .sh extension
+
+$ man COMMAND
+        displays manual for command COMMAND
+        very useful, gives good documentation
+
+
+Useful Packages
+
+Neofetch
+        -Displays system information and ascii logo for distro
+
+Vim
+        -Alternative text editor to nano. Harder to learn, but very efficient
+
+Firefox
+        -Less ram useage than Chrome or Chromium. Good if you have limited ram
+
+Openssh
+        -Allows you to connect to pc via internet. Useful for remote changes to code
+
+XFCE4
+        -Lightweight desktop environment. Good on desktops. Runs real good
+
+
+Useful Websites
+
+https://wiki.archlinux.org            Arch Linux wiki
+https://bbs.archlinux.org             Arch Linux forums
+https://stackoverflow.com             Stack Overflow
+https://reddit.com                    Linux communities will answer your questions and help you. Just look up a subreddit
+
+
+
+i use arch btw

@@ -1,0 +1,123 @@
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    font-family: 'Anton', sans-serif;
+    /*font-size: 3vw;*/
+}
+
+h1 {
+    color: #ffff4d;
+}
+
+h3{
+    color: white;
+}
+
+body {
+    background-color: #cccccc;
+}
+
+center {
+    background-image: url("./images/wallpapers/bossOSWallpaper1.jpg");
+    background-attachment: fixed;
+    padding: 70px;
+    margin: 1vw;
+    border-radius: 4px;
+}
+
+.content {
+    margin: 1vw;
+    padding: 10px;
+    background-color: #bbbbbb;
+    border-radius: 4px;
+}
+
+/***********************
+        CONTACT
+***********************/
+
+.contact {
+    background-color: #dddddd;
+    margin: 5vw;
+    padding: 1%;
+    border-radius: 10px;
+}
+.contact * {
+    margin: 5px 5px 2px 5px;
+}
+
+/***********************
+        WALLPAPER
+***********************/
+
+.wallpapers img {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.wallpapers a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    background-color: #aaaaaa;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+}
+.wallpapers a:hover {
+    background-color: #dddddd;
+}
+
+/***********************
+        DOWNLOAD
+***********************/
+
+.download a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    background-color: #aaaaaa;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+.download a:hover {
+    background-color: #dddddd;
+}
+
+/***********************
+        NAVBAR
+***********************/
+
+.navbar ul {
+  list-style-type: none;
+  margin: 1vw;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 16px;
+}
+
+.navbar li {
+  float: left;
+  background-color: yellow;
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #bbbbbb;
+}
